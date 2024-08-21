@@ -6,12 +6,12 @@
         <type value="RUNNING_DEVICE_TARGET" />
         <deviceKey>
           <Key>
-            <type value="VIRTUAL_DEVICE_PATH" />
-            <value value="C:\Users\Oscar\.android\avd\AndroidOscar.avd" />
+            <type value="SERIAL_NUMBER" />
+            <value value="adb-EAEQBMZ5BE5PWGYX-oz89XA._adb-tls-connect._tcp" />
           </Key>
         </deviceKey>
       </Target>
     </runningDeviceTargetSelectedWithDropDown>
-    <timeTargetWasSelectedWithDropDown value="2024-08-21T03:46:24.653350400Z" />
+    <timeTargetWasSelectedWithDropDown value="2024-08-21T04:35:23.210998400Z" />
   </component>
 </project>
