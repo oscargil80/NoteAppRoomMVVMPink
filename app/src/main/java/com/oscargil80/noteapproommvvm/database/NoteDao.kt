@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.room.*
 import com.oscargil80.noteapproommvvm.model.Note
 
-@Dao
+@Dao// Data access object
 interface NoteDao {
     @Insert(onConflict =  OnConflictStrategy.REPLACE)
     suspend fun insertNote(note: Note)
@@ -20,8 +20,5 @@ interface NoteDao {
 
     @Query ("SELECT * FROM NOTES WHERE noteTitle LIKE :query OR noteDesc like  :query")
     fun searchNote(query:String?): LiveData<List<Note>>
-
-
-
 
 }

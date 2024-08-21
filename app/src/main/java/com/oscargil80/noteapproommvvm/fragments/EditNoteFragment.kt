@@ -2,6 +2,7 @@ package com.oscargil80.noteapproommvvm.fragments
 
 import android.app.AlertDialog
 import android.os.Bundle
+import android.util.Log
 import android.view.*
 import androidx.fragment.app.Fragment
 import android.widget.Toast
@@ -64,11 +65,13 @@ class EditNoteFragment : Fragment(R.layout.fragment_edit_note), MenuProvider {
 
     private fun deleteNote(){
         AlertDialog.Builder(activity).apply {
-            setTitle("Delete Note")
-            setMessage("Do You want to delete this note?")
+            setTitle("Borrar Nota")
+            setMessage("Estas Seguro que quieres Borrar la Nota?")
             setPositiveButton("DELETE"){_,_ ->
+                Log.e("Borrar", "-> $currentNote")
                 noteViewModel.deleteNOte(currentNote)
-                Toast.makeText(context, "Note Delete", Toast.LENGTH_SHORT).show();
+
+                Toast.makeText(context, "Nota Borrada", Toast.LENGTH_SHORT).show();
                 view?.findNavController()?.popBackStack(R.id.homeFragment, false)
             }
             setNegativeButton("Cancel", null)

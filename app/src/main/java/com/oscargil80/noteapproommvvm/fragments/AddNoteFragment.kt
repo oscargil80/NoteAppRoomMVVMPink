@@ -38,6 +38,7 @@ class AddNoteFragment : Fragment(R.layout.fragment_add_note), MenuProvider {
 
         val menuHost: MenuHost = requireActivity()
         menuHost.addMenuProvider(this, viewLifecycleOwner, Lifecycle.State.RESUMED)
+
         noteViewModel = (activity as MainActivity).noteViewModel
         addNoteView = view
 
@@ -56,8 +57,6 @@ class AddNoteFragment : Fragment(R.layout.fragment_add_note), MenuProvider {
             Toast.makeText(addNoteView.context, "Please enter note Tittle", Toast.LENGTH_SHORT)
                 .show();
         }
-
-
     }
 
     override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
