@@ -9,6 +9,8 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:context=".NewNoteFragment"
+
+
         android:padding="12dp">
 
         <TextView
