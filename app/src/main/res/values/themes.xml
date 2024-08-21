@@ -12,7 +12,19 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+
         <!-- Customize your theme here. -->
         <!-- Customize your theme here. -->
+    </style>
+
+    <style name="titulo">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="subtitulo">
+        <item name="android:textColor">@color/pink</item>
+        <item name="android:textStyle">bold</item>
     </style>
 </resources>
